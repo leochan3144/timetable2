@@ -122,7 +122,7 @@
             {
                 "Time": "15:00\n-15:35",
                 "Day 1": null,
-                "Day 2": "STEAM ",
+                "Day 2": "S1 STEAM ",
                 "Day 3": null,
                 "Day 4": null,
                 "Day 5": null,
@@ -386,7 +386,7 @@
                 "Day 1": null,
                 "Day 2": null,
                 "Day 3": null,
-                "Day 4": "2A,2B,2C,2D IS 201,202,203,204,501,BL,CL,IITC,PL,SL ",
+                "Day 4": "S2 STEAM",
                 "Day 5": null,
                 "Day 6": null
             }
@@ -517,7 +517,7 @@
                 "Day 1": null,
                 "Day 2": "6D MACO 406 ",
                 "Day 3": null,
-                "Day 4": "2A,2B,2C,2D IS 201,202,203,204,501,BL,CL,IITC,PL,SL ",
+                "Day 4": "S2 STEAM",
                 "Day 5": null,
                 "Day 6": null
             }
@@ -646,9 +646,9 @@
             {
                 "Time": "15:00\n-15:35",
                 "Day 1": null,
-                "Day 2": "STEAM ",
+                "Day 2": "S1 STEAM ",
                 "Day 3": null,
-                "Day 4": "2A,2B,2C,2D IS 201,202,203,204,501,BL,CL,IITC,PL,SL ",
+                "Day 4": "S2 STEAM",
                 "Day 5": null,
                 "Day 6": null
             }
@@ -1039,7 +1039,7 @@
             {
                 "Time": "15:00\n-15:35",
                 "Day 1": null,
-                "Day 2": "STEAM ",
+                "Day 2": "S1 STEAM ",
                 "Day 3": null,
                 "Day 4": null,
                 "Day 5": null,
@@ -2089,7 +2089,7 @@
                 "Day 1": "S12 CLD",
                 "Day 2": null,
                 "Day 3": null,
-                "Day 4": "2A,2B,2C,2D IS 201,202,203,204,501,BL,CL,IITC,PL,SL ",
+                "Day 4": "S2 STEAM",
                 "Day 5": null,
                 "Day 6": null
             }
@@ -2351,7 +2351,7 @@
                 "Day 1": null,
                 "Day 2": null,
                 "Day 3": null,
-                "Day 4": "2A,2B,2C,2D IS 201,202,203,204,501,BL,CL,IITC,PL,SL ",
+                "Day 4": "S2 STEAM",
                 "Day 5": null,
                 "Day 6": null
             }
@@ -2742,9 +2742,9 @@
             {
                 "Time": "15:00\n-15:35",
                 "Day 1": null,
-                "Day 2": "STEAM ",
+                "Day 2": "S1 STEAM ",
                 "Day 3": null,
-                "Day 4": "2A,2B,2C,2D IS 201,202,203,204,501,BL,CL,IITC,PL,SL ",
+                "Day 4": "S2 STEAM",
                 "Day 5": null,
                 "Day 6": null
             }
@@ -3659,7 +3659,7 @@
             {
                 "Time": "15:00\n-15:35",
                 "Day 1": null,
-                "Day 2": "STEAM ",
+                "Day 2": "S1 STEAM ",
                 "Day 3": null,
                 "Day 4": null,
                 "Day 5": null,
@@ -4576,9 +4576,9 @@
             {
                 "Time": "15:00\n-15:35",
                 "Day 1": null,
-                "Day 2": "STEAM ",
+                "Day 2": "S1 STEAM ",
                 "Day 3": null,
-                "Day 4": "2A,2B,2C,2D IS 201,202,203,204,501,BL,CL,IITC,PL,SL ",
+                "Day 4": "S2 STEAM",
                 "Day 5": null,
                 "Day 6": null
             }
@@ -5102,7 +5102,7 @@
                 "Day 1": null,
                 "Day 2": null,
                 "Day 3": null,
-                "Day 4": "2A,2B,2C,2D IS 201,202,203,204,501,BL,CL,IITC,PL,SL ",
+                "Day 4": "S2 STEAM",
                 "Day 5": null,
                 "Day 6": null
             }
@@ -6017,7 +6017,7 @@
             {
                 "Time": "15:00\n-15:35",
                 "Day 1": "S12 CLD",
-                "Day 2": "STEAM ",
+                "Day 2": "S1 STEAM ",
                 "Day 3": null,
                 "Day 4": null,
                 "Day 5": null,
@@ -6803,7 +6803,7 @@
             {
                 "Time": "15:00\n-15:35",
                 "Day 1": "S12 CLD",
-                "Day 2": "STEAM ",
+                "Day 2": "S1 STEAM ",
                 "Day 3": null,
                 "Day 4": "5B CS 402 ",
                 "Day 5": null,
