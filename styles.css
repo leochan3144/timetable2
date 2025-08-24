@@ -1,0 +1,396 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px 0;
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Teacher Selection */
+.teacher-selection {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.selection-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.selection-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.selection-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-secondary {
+    background-color: #e2e8f0;
+    color: #475569;
+}
+
+.btn-secondary:hover {
+    background-color: #cbd5e1;
+}
+
+.teacher-search {
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.teacher-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.teacher-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: white;
+}
+
+.teacher-item:hover {
+    border-color: #2563eb;
+    background-color: #f1f5f9;
+}
+
+.teacher-item.selected {
+    border-color: #2563eb;
+    background-color: #eff6ff;
+}
+
+.teacher-item input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    accent-color: #2563eb;
+}
+
+.teacher-name {
+    font-weight: 500;
+    color: #1e293b;
+}
+
+.teacher-code {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-left: auto;
+}
+
+.selected-count {
+    text-align: center;
+    font-weight: 500;
+    color: #2563eb;
+}
+
+/* Timetable Section */
+.timetable-section {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.timetable-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.timetable-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.legend {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+}
+
+.legend-color.free {
+    background-color: #23d823;
+}
+
+.legend-color.single {
+    background-color: #2563eb;
+}
+
+.legend-color.multiple {
+    background-color: #dc2626;
+}
+
+.legend-color.break {
+    background-color: #444a52;
+}
+
+.timetable-container {
+    overflow-x: auto;
+}
+
+.timetable {
+    display: grid;
+    grid-template-columns: 120px repeat(6, 1fr);
+    gap: 1px;
+    background-color: #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: 800px;
+}
+
+.timetable-cell {
+    background: white;
+    padding: 12px 8px;
+    text-align: center;
+    font-size: 0.875rem;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.timetable-header-cell {
+    background-color: #f1f5f9;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.time-cell {
+    background-color: #f8fafc;
+    font-weight: 500;
+    color: #475569;
+    font-size: 0.8rem;
+}
+
+.cell-free {
+    background-color: #ecfdf5;
+    color: #065f46;
+}
+
+.cell-single {
+    background-color: #eff6ff;
+    color: #1e40af;
+}
+
+.cell-multiple {
+    background-color: #fef2f2;
+    color: #991b1b;
+}
+
+.cell-break {
+    background-color: #f1f5f9;
+    color: #475569;
+    font-style: italic;
+}
+
+.cell-content {
+    font-size: 0.75rem;
+    line-height: 1.3;
+}
+
+.teacher-info {
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.class-info {
+    color: #64748b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .selection-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .teacher-list {
+        grid-template-columns: 1fr;
+    }
+
+    .timetable-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .legend {
+        gap: 15px;
+    }
+
+    .timetable {
+        grid-template-columns: 100px repeat(6, 1fr);
+        min-width: 700px;
+    }
+
+    .timetable-cell {
+        padding: 8px 4px;
+        font-size: 0.8rem;
+        min-height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 20px 0;
+    }
+
+    .header h1 {
+        font-size: 1.75rem;
+    }
+
+    .teacher-selection,
+    .timetable-section {
+        padding: 20px;
+    }
+
+    .timetable {
+        grid-template-columns: 80px repeat(6, 1fr);
+        min-width: 600px;
+    }
+
+    .timetable-cell {
+        padding: 6px 2px;
+        font-size: 0.75rem;
+        min-height: 45px;
+    }
+}
+
+/* Loading and empty states */
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #64748b;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 40px;
+    color: #64748b;
+}
+
+.empty-state h3 {
+    margin-bottom: 10px;
+    color: #475569;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

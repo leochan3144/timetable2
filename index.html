@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Timetable Merger</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Teacher Timetable Merger</h1>
+            <p>Select teachers to view their merged timetables</p>
+        </header>
+
+        <section class="teacher-selection">
+            <div class="selection-header">
+                <h2>Select Teachers</h2>
+                <div class="selection-controls">
+                    <button id="selectAll" class="btn btn-secondary">Select All</button>
+                    <button id="clearAll" class="btn btn-secondary">Clear All</button>
+                </div>
+            </div>
+            
+            <div class="teacher-search">
+                <input type="text" id="teacherSearch" placeholder="Search teachers..." class="search-input">
+            </div>
+
+            <div class="teacher-list" id="teacherList">
+                <!-- Teacher checkboxes will be populated here -->
+            </div>
+
+            <div class="selected-count">
+                <span id="selectedCount">0 teachers selected</span>
+            </div>
+        </section>
+
+        <section class="timetable-section">
+            <div class="timetable-header">
+                <h2>Merged Timetable</h2>
+                <div class="legend">
+                    <div class="legend-item">
+                        <span class="legend-color free"></span>
+                        <span>Free Period</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color single"></span>
+                        <span>Single Teacher</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color multiple"></span>
+                        <span>Multiple Teachers</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color break"></span>
+                        <span>Break Time</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timetable-container">
+                <div class="timetable" id="timetable">
+                    <!-- Timetable will be populated here -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
