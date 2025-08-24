@@ -260,7 +260,7 @@ body {
 
 .cell-free {
     background-color: #ecfdf5;
-    color: #065f46;
+    color: #23d823;
 }
 
 .cell-single {
@@ -275,7 +275,7 @@ body {
 
 .cell-break {
     background-color: #f1f5f9;
-    color: #475569;
+    color: #444a52;
     font-style: italic;
 }
 
